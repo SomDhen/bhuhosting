@@ -24,7 +24,7 @@ body {
   font-size: 2rem;
   line-height: 1.4;
   color: var(--color-body);
-  /* margin: 2rem; */
+  margin: 2rem;
 }
 
 h1,
@@ -235,6 +235,31 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  outline: 0;
+  color: var(--color-headings);
+  transition: box-shadow 0.15s;
+}
+
+.input:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
