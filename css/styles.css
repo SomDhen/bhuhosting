@@ -27,7 +27,7 @@ body {
   font-size: 2rem;
   line-height: 1.4;
   color: var(--color-body);
-  /* margin: 2rem; */
+  margin: 3rem;
 }
 
 h1,
@@ -170,6 +170,15 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--small {
+  width: 20px;
+  height: 20px;
+}
+
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   align-items: center;
   background: #f3f9fa;
@@ -178,6 +187,10 @@ a {
   height: 65px;
   justify-content: center;
   width: 65px;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* Buttons */
@@ -451,5 +464,35 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  padding: 3.5rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32.5px;
+}
+
+@media screen and (min-width: 750px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 1.8rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 4rem;
   }
 }
