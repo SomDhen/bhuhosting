@@ -25,7 +25,7 @@ html {
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  line-height: 1.4;
+  line-height: 1.1;
   color: var(--color-body);
   /* margin: 2rem; */
 }
@@ -675,5 +675,28 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
