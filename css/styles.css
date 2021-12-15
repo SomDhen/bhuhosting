@@ -560,10 +560,6 @@ a {
 }
 
 @media screen and (min-width: 750px) {
-  .callout {
-    margin: 4rem;
-  }
-
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
